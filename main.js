@@ -1,32 +1,34 @@
 // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units
 
-CSS.registerProperty({
-  name: "--circle-color",
-  syntax: "<color>",
-  initialValue: "black",
-  inherits: true,
-});
+if ("registerProperty" in CSS) {
+  CSS.registerProperty({
+    name: "--circle-color",
+    syntax: "<color>",
+    initialValue: "black",
+    inherits: true,
+  });
 
-CSS.registerProperty({
-  name: "--circle-width",
-  syntax: "<number>",
-  initialValue: "100",
-  inherits: true,
-});
+  CSS.registerProperty({
+    name: "--circle-width",
+    syntax: "<number>",
+    initialValue: "100",
+    inherits: true,
+  });
 
-CSS.registerProperty({
-  name: "--circle-height",
-  syntax: "<number>",
-  initialValue: "100",
-  inherits: true,
-});
+  CSS.registerProperty({
+    name: "--circle-height",
+    syntax: "<number>",
+    initialValue: "100",
+    inherits: true,
+  });
 
-CSS.registerProperty({
-  name: "--circle-amount",
-  syntax: "<integer>",
-  initialValue: "1",
-  inherits: true,
-});
+  CSS.registerProperty({
+    name: "--circle-amount",
+    syntax: "<integer>",
+    initialValue: "1",
+    inherits: true,
+  });
+}
 
 if ("paintWorklet" in CSS) {
   CSS.paintWorklet.addModule("worklet.js");
