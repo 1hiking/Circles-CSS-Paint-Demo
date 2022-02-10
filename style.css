@@ -6,12 +6,14 @@ body {
 }
 
 .pattern {
+  text-align: center;
   width: 100%;
   height: 100%;
-  background-color: lightblue;
+  background-color: #2e3440;
   min-height: 100vh;
   background-image: paint(line);
-  --rectangle-color: red;
-  --rectangle-width: 100;
-  --rectangle-height: 200;
+  --circle-color: #4c566a;
+  --circle-width: 100;
+  --circle-height: 200;
+  --circle-amount: 20;
 }
