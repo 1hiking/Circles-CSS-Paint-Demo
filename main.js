@@ -9,14 +9,7 @@ if ("registerProperty" in CSS) {
   });
 
   CSS.registerProperty({
-    name: "--circle-width",
-    syntax: "<number>",
-    initialValue: "100",
-    inherits: true,
-  });
-
-  CSS.registerProperty({
-    name: "--circle-height",
+    name: "--circle-radius",
     syntax: "<number>",
     initialValue: "100",
     inherits: true,

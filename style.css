@@ -13,7 +13,6 @@ body {
   min-height: 100vh;
   background-image: paint(line);
   --circle-color: #4c566a;
-  --circle-width: 100;
-  --circle-height: 200;
+  --circle-radius: 10;
   --circle-amount: 20;
 }

@@ -8,8 +8,7 @@ class Circles {
   static get inputProperties() {
     return [
       `--${WORKLET}-color`,
-      `--${WORKLET}-width`,
-      `--${WORKLET}-height`,
+      `--${WORKLET}-radius`,
       `--${WORKLET}-amount`,
     ];
   }
@@ -23,7 +22,7 @@ class Circles {
       context.arc(
         i * getRandom(1, 100),
         i * getRandom(1, 100),
-        50,
+        properties.get(`--${WORKLET}-radius`),
         0,
         2 * Math.PI,
         false
