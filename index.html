@@ -2,23 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Paint: Circle</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <h1>Worklet Example</h1>
     <p>So this is the power of CSS Paint API....</p>
 
     <a href="https://github.com/1hiking/Circles-CSS-Paint-Demo">Source code</a>
 
-    <div class="pattern">
-        Enter devtools and adjust <code>--circle</code> properties.
+    <div>
+        <input type="range" id="amount" name="amount" min="1" max="100" value="10" />
+        <label for="amount">Amount of circles</label>
     </div>
+    <div>
+        <input type="range" id="radius" name="radius" min="3" max="20" value="10" />
+        <label for="radius">Radius of circles</label>
+    </div>
+    <div>
+        <input type="color" name="color" id="color">
+        <label for="color">Color of circles</label>
+    </div>
+    <div id="pattern" style="
+        --circle-color: rgb(76, 86, 110, 0.7);
+        --circle-radius: 10;
+        --circle-amount: 4;
+      "></div>
 
     <script src="https://unpkg.com/css-paint-polyfill"></script>
 
