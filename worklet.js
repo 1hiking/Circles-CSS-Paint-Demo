@@ -27,4 +27,4 @@ class Circles {
   }
 }
 
-registerPaint(`line`, Circles);
+registerPaint(`circles`, Circles);
